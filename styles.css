@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: #eeeeee;
+  font-family: lato, sans-serif;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styling Navbar */
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 4rem 0 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 7rem;
+  background-color: #eeeeee;
+}
+
+.logo {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 300px;
+}
+
+nav {
+  width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+/* Styling Main */
+main {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero>p {
+  font-size: 2.5rem;
+  font-weight: 500;
+  min-height: 5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form>input {
+  width: 25rem;
+  min-height: 3rem;
+}
+
+form>button {
+  background: #fea801;
+  border: 0;
+  width: 15rem;
+  min-height: 3rem;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-top: 1.5rem;
+}
+
+/* Styling Features */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  max-width: 95rem;
+  height: 48rem;
+}
+
+.features-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 48rem;
+  justify-content: space-evenly;
+  width: 25%;
+}
+
+.features-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 48rem;
+  justify-content: space-evenly;
+}
+
+.features h3 {
+  font-size: 2.4rem;
+}
+
+.features p {
+  font-size: 1.6rem;
+}
+
+.features i {
+  font-size: 5rem;
+  color: #ff8c00;
+}
+
+/* Styling Pricing */
+.pricing {
+  display: flex;
+  width: 95vw;
+  max-width: 98rem;
+  justify-content: space-between;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.price {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  border: 1px solid black;
+  width: 30%;
+  height: 31rem;
+}
+
+.price h3 {
+  font-size: 1.8rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dddddd;
+}
+
+.price-tag {
+  font-size: 3rem;
+  height: 7rem;
+}
+
+.price-des {
+  font-size: 1.6rem;
+  height: 2.5rem;
+}
+
+.price-button {
+  font-size: 1.8rem;
+  width: 10rem;
+  height: 3.7rem;
+  margin: 3.8rem auto;
+  background: #fbaf05;
+  border: 0;
+}
+
+/* Styling Footer */
+footer {
+  width: 100%;
+  height: 10rem;
+  background: #dddddd;
+}
+
+.footer-pages {
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3rem;
+  margin-right: 3rem;
+  height: 7rem;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+  font-size: 1.4rem;
+  margin-top: -1.9rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .pricing {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100rem;
+  }
+
+  .price {
+    width: 45%;
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 9rem;
+    gap: 1rem;
+  }
+
+  nav {
+    width: 70vw;
+  }
+
+  main {
+    margin-top: 10rem;
+  }
+
+  iframe {
+    width: 90vw;
+    height: 50vw;
+  }
+
+  .features-icons {
+    display: none;
+  }
+
+  .logo {
+    justify-content: center;
+  }
+
+  h1, h2, h3, h4, p {
+    text-align: center;
+  }
+
+  .hero p, .features p, .features h3 {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 7px;
+  }
+
+  .price {
+    min-width: 200px;
+  }
+}
+
+/* Hover Effects */
+button {
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ed9c00;
+  cursor: pointer;
+}
